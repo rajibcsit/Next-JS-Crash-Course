@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -8,19 +10,19 @@ function Header() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href="/about">
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

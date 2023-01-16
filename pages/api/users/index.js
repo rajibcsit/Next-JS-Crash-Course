@@ -9,6 +9,7 @@ export default function handler(req, res) {
       id: Date.now(),
       name: user,
     };
+
     users.push(newUser);
     res.status(201).json(newUser);
   }
